@@ -297,8 +297,7 @@ static void virgo_go_to_desk(Virgo *v, unsigned desk)
 	trayicon_set(&v->trayicon, v->current + 1);
 }
 
-void __main(void) __asm__("__main");
-void __main(void)
+int main(void)
 {
 	Virgo v = {0};
 	MSG msg;
